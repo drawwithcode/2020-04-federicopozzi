@@ -1,0 +1,62 @@
+body {padding: 0;
+    margin: 0;
+    background-image: radial-gradient(circle, rgba(53, 102, 9, 1), rgba(25, 421, 92, 1) )}
+
+
+span, p {
+    font-family: Verdana;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}
+.rotate1 {
+    animation: rotation1 2s infinite linear;
+    cursor:pointer
+}
+
+@keyframes rotation1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.rotate2 {
+    animation: rotation2 2s infinite linear;
+    cursor:pointer
+}
+
+@keyframes rotation2 {
+    from {
+        transform: rotate(359deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+.colorate {
+    animation: color 1s infinite alternate ;
+    cursor:pointer
+}
+
+@keyframes color {
+    from {color: red;}
+    to {color: yellow;}
+}
+
+.sizeate {
+    animation: size 1s infinite alternate ;
+    cursor:pointer
+}
+
+@keyframes size {
+    from {font-size: 10px;}
+    to {font-size: 40px;}
+}
+

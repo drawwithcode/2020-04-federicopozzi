@@ -4,7 +4,7 @@ function setup() {
     capture = createCapture(VIDEO);
     capture.size(windowWidth/2, windowHeight/2);
     capture.position(windowWidth/2-capture.width/2,windowHeight/2-capture.height/2);
-    capture.style("background-color", "red");
+    capture.style("background-color", "rgba(53, 102, 9, 0)");
 
 
     text = createElement('span',"OMG! You are very bored!");
@@ -15,6 +15,7 @@ function setup() {
     button = createButton('Here is the solution!');
     button.position(button.center(), windowHeight-130);
     button.mousePressed(outLink);
+    button.style("color:white; background-color:blue",);
 }
 
 function draw() {
